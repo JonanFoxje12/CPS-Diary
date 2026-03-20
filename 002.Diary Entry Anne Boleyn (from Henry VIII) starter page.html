@@ -1,0 +1,34 @@
+<link rel="icon" href="Diary icon.jpg">
+<link rel="stylesheet" href="DEAB.css">
+
+<html>
+    <head>
+        <title>Diary entry from Henry VIII about Anne Boleyn</title>
+    </head>
+    <body>
+        <h1>Diary entry from Henry VIII about Anne Boleyn</h1>
+        <p>Young Anne Boleyn, _____ was two</p><br>
+        <p>Had a daughter, the best she _____ do</p><br>
+        <p>I said she _____ed with some other man</p><br>
+        <p>And off _____ _____ _____went dear Anne</p><br>
+        <input type="password" id="input1">
+        <input type="button" value="Submit" onclick="submit()"><br>
+        <a href="Diary.html"><input type="hidden" value="Enter diary" id="link"></a>
+
+        <script>
+            const input1 = document.getElementById("input1");
+            const input2 = document.getElementById("input2");
+            const input3 = document.getElementById("input3");
+            const input4 = document.getElementById("input4");
+            const input5 = document.getElementById("input5");
+            const input6 = document.getElementById("input6");
+            const link = document.getElementById("link");
+
+            function submit() {
+                if (input1.value == "she could flirt for the chop") {
+                    link.setAttribute("type", "button")
+                }
+            }
+        </script>
+    </body>
+</html>

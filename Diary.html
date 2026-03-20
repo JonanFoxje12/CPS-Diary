@@ -1,0 +1,56 @@
+<link rel="icon" href="Diary icon.jpg">
+
+<html>
+    <head>
+        <title>Diary entry Anne Boleyn (from Henry VIII)</title>
+    </head>
+    <body>
+        <style>
+            input[type=checkbox] {
+                width: 20px;
+                height: 20px;
+            }
+
+            .hidden {
+                display: none;
+            }
+        </style>
+        <h1>Diary entry Anne Boleyn (from Henry VIII)</h1>
+        <img src="000.Screenshot tekst.png" title="Diary Text" alt="Diary Text" width="1000"><br>
+        <input type="checkbox" id="showText" onclick="toggleText()"><label for="showText" style="font-size: 20px;">Show text in normal font</label><br>
+        <p style="font-size: 20px;" id="text" class="hidden">
+            Dear diary,
+            <br><br>
+            Yesterday, Anne Boleyn was executed. She was convicted of treason, adultery and incest. <br>
+            Why, well, because she was not submissive to me, she kept behaving like she was more <br>
+            important than me, which of course is not the case. But the most important reason is the <br>
+            following: when I was still married to Catherine of Aragon, she kept telling me ‘Divorce <br>
+            Catherine of Aragon, marry me, cause Í will be the person who will be able to give you a son. <br>
+            Break of your relationships with the Pope and with the Church, found your own church, because <br>
+            Í will be the person who will be able to give you a son.’ But now, when I did that all, founded <br>
+            the Church of England, she didn’t give me a son! Only a daughter, princess Elizabeth I. But I <br>
+            don’t want a daughter, I want a male heir, someone who can succeed me as king when I die. <br>
+            But she failed to do that. That’s the reason why I falsely accused her. I said she had relations <br>
+            with five other men, including her brother, George Boleyn, what resulted into adultery and <br>
+            incest. But treason was actually true, because she lied to me, she said she would give me a son, <br>
+            but she didn’t do that, so she actually lied to me, and lying to the king is actually treason. So at <br>
+            the moment Anne Boleyn was executed I felt glad, because I’m able to start another marriage <br>
+            with someone who wíll be able to give me a son. I regret about our marriage that she didn’t give <br>
+            me a son, but I don’t totally regret our marriage, I loved her so much more than Catherine of <br>
+            Aragon. <br><br>
+
+            <i>Fun Fact: Anne Boleyn appears to be Henry VIII’s biggest love.</i>
+        </p>
+        <script>
+            const text = document.getElementById("text");
+            const checkbox = document.getElementById("showText");
+            function toggleText() {
+                if (checkbox.checked) {
+                    text.classList.remove("hidden")
+                } else {
+                    text.classList.add("hidden")
+                }
+            }
+        </script>
+    </body>
+</html>
